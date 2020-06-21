@@ -1,0 +1,82 @@
+.skills
+  &--mobile
+    display: none
+  &__figures
+    position: relative
+    height: 800px
+    width: 800px
+    margin: 2rem auto
+    overflow: hidden
+  &__additional
+    display: none
+    position: absolute
+    background: $dark-grey
+    width: 400px
+    height: 600px
+    animation: tetris3 2s
+    right: 0
+    &--white-box
+      position: absolute
+      width: 200px
+      height: 400px
+      background: $white
+      bottom: 0
+  &__basis
+    display: none
+    position: absolute
+    width: 400px
+    height: 400px
+    background: $blue
+    left: 200px
+    top: 200px
+    z-index: 2
+    animation: tetris2 2s
+  &__plus
+    display: none
+    position: absolute
+    left: 0
+    right: 0
+    top: 600px
+    animation: tetris1 2s
+    margin: auto
+    height: 200px
+    background: $pink
+  &__title
+    font-size: 1.25rem
+    font-family: "Roboto Medium"
+    margin-bottom: 0.7rem
+    text-align: center
+  &__items
+    text-align: center
+    line-height: 1.44rem
+  &__item
+    font-size: 1.15rem
+.additional
+  &__text
+    position: absolute
+    top: 1.4rem
+    right: 0.6rem
+.basis, .plus
+  &__text
+    height: 100%
+    margin: auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+.basis, .plus, .additional
+  &__text
+    &--mobile
+      padding: 2rem 0rem
+.basis
+  &__text
+    &--mobile
+      background: $pink
+.additional
+  &__text
+    &--mobile
+      background: $grey
+.plus
+  &__text
+    &--mobile
+      background: $blue

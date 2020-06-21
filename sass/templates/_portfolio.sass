@@ -1,0 +1,80 @@
+.portfolio
+  &__title
+    font-size: 1.3rem
+    margin-bottom: 2rem
+  &__websites
+    display: flex
+    flex-wrap: wrap
+    &-js
+      margin-bottom: 2rem
+  &__website
+    flex-basis: 50%
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 0 auto
+    margin-bottom: 2rem
+.website
+  &__img
+    background: $grey
+    margin-bottom: 1rem
+    box-shadow: 1px 1px 5px rgba($dark,0.3)
+  &__img>a
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    &:hover
+      .website__photo-href
+        -webkit-filter: brightness(50%)
+      .website__photo-text
+        display: block
+  &__photo-text
+    position: absolute
+    color: $white
+    font-size: 1.4rem
+    padding: 0.5rem 1rem
+    border: solid 1px $white
+    background: rgba($dark, 0.6)
+    display: none
+  &__photo-href
+    width: 300px
+    height: 300px
+  &__info
+    display: none
+    width: 300px
+  &__info--show
+    display: block
+  &__item
+    list-style: inside
+  &__btn
+    background: $blue
+    width: 11rem
+    text-align: center
+    margin-bottom: 1rem
+    &:hover
+      background: $pink
+  &__hrf
+    font-size: 1rem
+    font-family: "Roboto Medium"
+    padding: 0.5rem 0rem
+    display: flex
+    justify-content: center
+  &__hrf-info
+    color: $white
+    display: flex
+    align-items: center
+    &:hover
+      cursor: pointer
+      background: $pink
+      color: $dark
+      .website__svg
+        fill: $dark
+  &__svg
+    width: 1rem
+    height: 1rem
+    margin-left: 0.35rem
+    fill: $white
+  &__svg--up
+    transform: rotate(180deg)
+ 
