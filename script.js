@@ -5,6 +5,7 @@ const tetris = () => {
     tetris2 = document.querySelector(".skills__basis"),
     tetris3 = document.querySelector(".skills__additional"),
     box = document.querySelector(".skills__figures"),
+    title = document.querySelector(".portfolio__websites-html"),
     boxTitle = document.querySelector(".skills__main-title");
 
   let flag = true;
@@ -13,7 +14,11 @@ const tetris = () => {
     let forScroll = boxTitle.getBoundingClientRect();
     forScroll = forScroll.top + window.pageYOffset;
 
-    if (window.pageYOffset >= 2200) {
+    let scrollTitle = title.getBoundingClientRect();
+    scrollTitle = scrollTitle.top + window.pageYOffset;
+
+    console.log(scrollTitle);
+    if (window.pageYOffset >= scrollTitle) {
       if (flag === true) {
         window.scrollTo({ top: forScroll, behavior: "smooth" });
         flag = false;
